@@ -3,117 +3,267 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Blood</title>
   </head>
   <body>
-    <div class="from">
-      <div class="blood-title" style="color: black">
-        <h1>রেজিস্ট্রেশন</h1>
-      </div>
-      <div class="form-group">
-        <div>
-          <label for="Name">
-            নাম
-            <span>*</span>
-        </label>
-            <input type="text" name="name" placeholder="নাম" />
-        
-        </div>
-      </div>
-      <div class="form-group">
-        <div>
-          <label for="phone">
-            মোবাইল নাম্বার ( ইংরেজি )
-            <span>*</span>
-        </label>
-            <input type="number" name="phone" placeholder="মোবাইল নাম্বার " />
-          
-        </div>
-      </div>
-      <div class="form-group">
-        <div>
-          <label for="confirm_mobile">
-            কনফার্ম মোবাইল নাম্বার ( ইংরেজি )
-            <span>*</span>
-        </label>
-            <input
-              type="number"
-              name="phone"
-              placeholder="কনফার্ম মোবাইল নাম্বার ( ইংরেজি )"
-            />
-          
-        </div>
-      </div>
-      <div class="form-group">
-        <div>
-          <label for="email">
-            ইমেইল (যদি থাকে)
-            <span>*</span>
-          </label>
-            <input type="Email" name="Email" placeholder="ইমেইল" />
-          
-        </div>
-      </div>
-      <div class="form-group">
-        <div>
-          <label for="blood_group">
-            রক্তের গ্রুপ
-            <span>*</span>
-        </label>
-           <select name="blood_group" id="blood_group" class="form-select form-select-lg">
-                  <option value="" selected="">সিলেক্ট করুন</option>
-                   <option value="A+">A+</option>
-                   <option value="A-">A-</option>
-                   <option value="B+">B+</option>
-                   <option value="B-">B-</option>
-                   <option value="O+">O+</option>
-                   <option value="O-">O-</option>
-                   <option value="AB+">AB+</option>
-                   <option value="AB-">AB-</option>
-                   <!-- <option value="Bombay">Bombay</option>
-                   <option value="Others">Others</option> -->
+      <div class="all">
+        <div class="from">
+          <div class="blood-title" style="color: black">
+            <h1>রেজিস্ট্রেশন</h1>
+          </div>
+          <div class="form-group">
+            <div>
+              <label for="Name">
+                নাম
+                <span>*</span>
+            </label>
+                <input type="text" name="name" placeholder="নাম" />
+            
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <label for="phone">
+                মোবাইল নাম্বার ( ইংরেজি )
+                <span>*</span>
+            </label>
+                <input type="number" name="phone" placeholder="মোবাইল নাম্বার " />
+              
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <label for="confirm_mobile">
+                কনফার্ম মোবাইল নাম্বার ( ইংরেজি )
+                <span>*</span>
+            </label>
+                <input
+                  type="number"
+                  name="phone"
+                  placeholder="কনফার্ম মোবাইল নাম্বার ( ইংরেজি )"
+                />
+              
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <label for="email">
+                ইমেইল (যদি থাকে)
+                <span>*</span>
+              </label>
+                <input type="Email" name="Email" placeholder="ইমেইল" />
+              
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <label for="blood_group">
+                রক্তের গ্রুপ
+                <span>*</span>
+            </label>
+               <select name="blood_group" id="blood_group" class="form-select form-select-lg">
+                      <option value="" selected="">সিলেক্ট করুন</option>
+                       <option value="A+">A+</option>
+                       <option value="A-">A-</option>
+                       <option value="B+">B+</option>
+                       <option value="B-">B-</option>
+                       <option value="O+">O+</option>
+                       <option value="O-">O-</option>
+                       <option value="AB+">AB+</option>
+                       <option value="AB-">AB-</option>
+                       <!-- <option value="Bombay">Bombay</option>
+                       <option value="Others">Others</option> -->
+                    </select>
+              
+            </div>
+          </div> 
+            <div class="form-group">
+                <label for="last_donate_date">সর্বশেষ রক্ত দানের তারিখ</label>
+                <div class="input-group">
+                <select name="last_day" class="form-select" id="last_day">
+                    <option value="">তারিখ সিলেক্ট করুন</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                <select name="last_month" class="form-select" id="last_month">
+                    <option value="">মাস সিলেক্ট করুন</option>
+                    <option value="January">January</option><option value="February">February</option>
+                    <option value="March">March</option><option value="April">April</option>
+                    <option value="May">May</option><option value="June">June</option>
+                    <option value="July">July</option><option value="August">August</option>
+                    <option value="September">September</option><option value="October">October</option>
+                    <option value="November">November</option><option value="December">December</option>
                 </select>
-          
-        </div>
-      </div> 
-        <div class="form-group">
-            <label for="last_donate_date">সর্বশেষ রক্ত দানের তারিখ</label>
+    
+                <select name="last_year" class="form-select" id="last_year">
+                    <option value="">সাল সিলেক্ট করুন</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                    </select>
+                </div>
+            </div> 
+            <div class="form-group">
+                <label for="country">এস এস সি পরিক্ষার সাল<span>*</span></label>
+                <select name="country" class="form-select" id="country">
+                  <option>ইয়ার সিলেক্ট করুন</option>
+                  <option value="Bangladesh">2012</option>
+                  <option value="Bangladesh">2013</option>
+                  <option value="Bangladesh">2014</option>
+                  <option value="Bangladesh">2015</option>
+                  <option value="Bangladesh">2016</option>
+                  <option value="Bangladesh">2017</option>
+                  <option value="Bangladesh">2018</option>
+                  <option value="Bangladesh">2019</option>
+                  <option value="Bangladesh">2020</option>
+                  <option value="Bangladesh">2021</option>
+                  <option value="Bangladesh">2022</option>
+                </select>
+              </div> 
+              <div class="form-group">
+                <label for="country">মোট কতবার রক্তদান করেছেন?<span>*</span></label>
+                <select name="country" class="form-select" id="country">
+                  <option>ইয়ার সিলেক্ট করুন</option>
+                  <option value="Bangladesh">01</option>
+                  <option value="Bangladesh">02</option>
+                  <option value="Bangladesh">03</option>
+                  <option value="Bangladesh">04</option>
+                  <option value="Bangladesh">05</option>
+                  <option value="Bangladesh">06</option>
+                  <option value="Bangladesh">07</option>
+                  <option value="Bangladesh">09</option>
+                  <option value="Bangladesh">10</option>
+                  <option value="Bangladesh">11</option>
+                  <option value="Bangladesh">12</option>
+                </select>
+              </div>
+              <fieldset>
+                <legend>স্থায়ী ঠিকানা </legend>
+                  <div class="form-group">
+                    <label for="s_dist">জেলা<span>*</span></label>
+                    <select name="s_dist" class="form-select district" id="s_dist" disabled="">
+                      <option>জেলা সিলেক্ট করুন</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="s_thana" class="thana_name">উপজেলা<span>*</span></label>
+                    <select name="s_thana" class="form-select district" id="s_thana" disabled="">
+                      <option>উপজেলা সিলেক্ট করুন</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="s_address">ঠিকানা<span>*</span></label>
+                    <input type="text" name="s_address" class="form-control" id="s_address" placeholder="ঠিকানা">
+                  </div>
+              </fieldset>
+            </div>
+            <fieldset>
+                <legend>বর্তমান ঠিকানা </legend>
+                  <div class="form-group">
+                    <label for="bartoman_zila">জেলা<span>*</span></label>
+                    <select name="bartoman_zila" class="form-select district" id="bartoman_zila" disabled="">
+                      <option>জেলা সিলেক্ট করুন</option>
+                    </select>
+                  </div>
+    
+                  <div class="form-group">
+                    <label for="bartoman_thana" class="thana_name">উপজেলা<span>*</span></label>
+                    <select name="bartoman_thana" class="form-select district" id="bartoman_thana" disabled="">
+                      <option>উপজেলা সিলেক্ট করুন</option>
+                    </select>
+                  </div>
+    
+                  <div class="form-group">
+                    <label for="bartoman_address">ঠিকানা<span>*</span></label>
+                    <input type="text" name="bartoman_address" class="form-control" id="bartoman_address" placeholder="ঠিকানা">
+                  </div>
+              </fieldset>
+    
+          </div>
+          <div class="form-group">
+            <label for="gender">জেন্ডার<span>*</span></label>
+            <br>
+            <div class="form-check form-check-inline me-5">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="gender" value="male" checked="">পুরুষ</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="gender" value="female">নারী</label>
+            </div>
+              <p class="text-danger mt-3">নারী ডোনারদের মোবাইল নাম্বার গোপন রাখা হবে।</p>
+          </div>
+          <div class="form-group">
+            <label for="birthday_date">জন্ম তারিখ <span>*</span> <small>(গোপন থাকবে)</small></label>
             <div class="input-group">
-            <select name="last_day" class="form-select" id="last_day">
+              <select name="birthday_last_day" class="form-select" id="birthday_last_day">
                 <option value="">তারিখ সিলেক্ট করুন</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                    <option value="16">16</option>
-                                    <option value="17">17</option>
-                                    <option value="18">18</option>
-                                    <option value="19">19</option>
-                                    <option value="20">20</option>
-                                    <option value="21">21</option>
-                                    <option value="22">22</option>
-                                    <option value="23">23</option>
-                                    <option value="24">24</option>
-                                    <option value="25">25</option>
-                                    <option value="26">26</option>
-                                    <option value="27">27</option>
-                                    <option value="28">28</option>
-                                    <option value="29">29</option>
-                                    <option value="30">30</option>
-                                    <option value="31">31</option>
-                                </select>
-            <select name="last_month" class="form-select" id="last_month">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                      <option value="6">6</option>
+                                      <option value="7">7</option>
+                                      <option value="8">8</option>
+                                      <option value="9">9</option>
+                                      <option value="10">10</option>
+                                      <option value="11">11</option>
+                                      <option value="12">12</option>
+                                      <option value="13">13</option>
+                                      <option value="14">14</option>
+                                      <option value="15">15</option>
+                                      <option value="16">16</option>
+                                      <option value="17">17</option>
+                                      <option value="18">18</option>
+                                      <option value="19">19</option>
+                                      <option value="20">20</option>
+                                      <option value="21">21</option>
+                                      <option value="22">22</option>
+                                      <option value="23">23</option>
+                                      <option value="24">24</option>
+                                      <option value="25">25</option>
+                                      <option value="26">26</option>
+                                      <option value="27">27</option>
+                                      <option value="28">28</option>
+                                      <option value="29">29</option>
+                                      <option value="30">30</option>
+                                      <option value="31">31</option>
+                                  </select>
+              <select name="birthday_last_month" class="form-select" id="birthday_last_month">
                 <option value="">মাস সিলেক্ট করুন</option>
                 <option value="January">January</option><option value="February">February</option>
                 <option value="March">March</option><option value="April">April</option>
@@ -121,261 +271,114 @@
                 <option value="July">July</option><option value="August">August</option>
                 <option value="September">September</option><option value="October">October</option>
                 <option value="November">November</option><option value="December">December</option>
-            </select>
-
-            <select name="last_year" class="form-select" id="last_year">
+              </select>
+    
+              <select name="birthday_last_year" class="form-select" id="birthday_last_year">
                 <option value="">সাল সিলেক্ট করুন</option>
+                                    <option value="1950">1950</option>
+                                    <option value="1951">1951</option>
+                                    <option value="1952">1952</option>
+                                    <option value="1953">1953</option>
+                                    <option value="1954">1954</option>
+                                    <option value="1955">1955</option>
+                                    <option value="1956">1956</option>
+                                    <option value="1957">1957</option>
+                                    <option value="1958">1958</option>
+                                    <option value="1959">1959</option>
+                                    <option value="1960">1960</option>
+                                    <option value="1961">1961</option>
+                                    <option value="1962">1962</option>
+                                    <option value="1963">1963</option>
+                                    <option value="1964">1964</option>
+                                    <option value="1965">1965</option>
+                                    <option value="1966">1966</option>
+                                    <option value="1967">1967</option>
+                                    <option value="1968">1968</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1970">1970</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
                                     <option value="2020">2020</option>
                                     <option value="2021">2021</option>
                                     <option value="2022">2022</option>
                                     <option value="2023">2023</option>
                                     <option value="2024">2024</option>
                                     <option value="2025">2025</option>
-                                </select>
+                                  </select>
             </div>
-        </div> 
-        <div class="form-group">
-            <label for="country">এস এস সি পরিক্ষার সাল<span>*</span></label>
-            <select name="country" class="form-select" id="country">
-              <option>ইয়ার সিলেক্ট করুন</option>
-              <option value="Bangladesh">2012</option>
-              <option value="Bangladesh">2013</option>
-              <option value="Bangladesh">2014</option>
-              <option value="Bangladesh">2015</option>
-              <option value="Bangladesh">2016</option>
-              <option value="Bangladesh">2017</option>
-              <option value="Bangladesh">2018</option>
-              <option value="Bangladesh">2019</option>
-              <option value="Bangladesh">2020</option>
-              <option value="Bangladesh">2021</option>
-              <option value="Bangladesh">2022</option>
-            </select>
-          </div> 
-          <div class="form-group">
-            <label for="country">মোট কতবার রক্তদান করেছেন?<span>*</span></label>
-            <select name="country" class="form-select" id="country">
-              <option>ইয়ার সিলেক্ট করুন</option>
-              <option value="Bangladesh">01</option>
-              <option value="Bangladesh">02</option>
-              <option value="Bangladesh">03</option>
-              <option value="Bangladesh">04</option>
-              <option value="Bangladesh">05</option>
-              <option value="Bangladesh">06</option>
-              <option value="Bangladesh">07</option>
-              <option value="Bangladesh">09</option>
-              <option value="Bangladesh">10</option>
-              <option value="Bangladesh">11</option>
-              <option value="Bangladesh">12</option>
-            </select>
           </div>
-          <fieldset>
-            <legend>স্থায়ী ঠিকানা </legend>
-              <div class="form-group">
-                <label for="s_dist">জেলা<span>*</span></label>
-                <select name="s_dist" class="form-select district" id="s_dist" disabled="">
-                  <option>জেলা সিলেক্ট করুন</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="s_thana" class="thana_name">উপজেলা<span>*</span></label>
-                <select name="s_thana" class="form-select district" id="s_thana" disabled="">
-                  <option>উপজেলা সিলেক্ট করুন</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="s_address">ঠিকানা<span>*</span></label>
-                <input type="text" name="s_address" class="form-control" id="s_address" placeholder="ঠিকানা">
-              </div>
-          </fieldset>
-        </div>
-        <fieldset>
-            <legend>বর্তমান ঠিকানা </legend>
-              <div class="form-group">
-                <label for="bartoman_zila">জেলা<span>*</span></label>
-                <select name="bartoman_zila" class="form-select district" id="bartoman_zila" disabled="">
-                  <option>জেলা সিলেক্ট করুন</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="bartoman_thana" class="thana_name">উপজেলা<span>*</span></label>
-                <select name="bartoman_thana" class="form-select district" id="bartoman_thana" disabled="">
-                  <option>উপজেলা সিলেক্ট করুন</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="bartoman_address">ঠিকানা<span>*</span></label>
-                <input type="text" name="bartoman_address" class="form-control" id="bartoman_address" placeholder="ঠিকানা">
-              </div>
-          </fieldset>
-
-      </div>
-      <div class="form-group">
-        <label for="gender">জেন্ডার<span>*</span></label>
-        <br>
-        <div class="form-check form-check-inline me-5">
-          <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="gender" value="male" checked="">পুরুষ</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="gender" value="female">নারী</label>
-        </div>
-          <p class="text-danger mt-3">নারী ডোনারদের মোবাইল নাম্বার গোপন রাখা হবে।</p>
-      </div>
-      <div class="form-group">
-        <label for="birthday_date">জন্ম তারিখ <span>*</span> <small>(গোপন থাকবে)</small></label>
-        <div class="input-group">
-          <select name="birthday_last_day" class="form-select" id="birthday_last_day">
-            <option value="">তারিখ সিলেক্ট করুন</option>
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                  <option value="5">5</option>
-                                  <option value="6">6</option>
-                                  <option value="7">7</option>
-                                  <option value="8">8</option>
-                                  <option value="9">9</option>
-                                  <option value="10">10</option>
-                                  <option value="11">11</option>
-                                  <option value="12">12</option>
-                                  <option value="13">13</option>
-                                  <option value="14">14</option>
-                                  <option value="15">15</option>
-                                  <option value="16">16</option>
-                                  <option value="17">17</option>
-                                  <option value="18">18</option>
-                                  <option value="19">19</option>
-                                  <option value="20">20</option>
-                                  <option value="21">21</option>
-                                  <option value="22">22</option>
-                                  <option value="23">23</option>
-                                  <option value="24">24</option>
-                                  <option value="25">25</option>
-                                  <option value="26">26</option>
-                                  <option value="27">27</option>
-                                  <option value="28">28</option>
-                                  <option value="29">29</option>
-                                  <option value="30">30</option>
-                                  <option value="31">31</option>
-                              </select>
-          <select name="birthday_last_month" class="form-select" id="birthday_last_month">
-            <option value="">মাস সিলেক্ট করুন</option>
-            <option value="January">January</option><option value="February">February</option>
-            <option value="March">March</option><option value="April">April</option>
-            <option value="May">May</option><option value="June">June</option>
-            <option value="July">July</option><option value="August">August</option>
-            <option value="September">September</option><option value="October">October</option>
-            <option value="November">November</option><option value="December">December</option>
-          </select>
-
-          <select name="birthday_last_year" class="form-select" id="birthday_last_year">
-            <option value="">সাল সিলেক্ট করুন</option>
-                                <option value="1950">1950</option>
-                                <option value="1951">1951</option>
-                                <option value="1952">1952</option>
-                                <option value="1953">1953</option>
-                                <option value="1954">1954</option>
-                                <option value="1955">1955</option>
-                                <option value="1956">1956</option>
-                                <option value="1957">1957</option>
-                                <option value="1958">1958</option>
-                                <option value="1959">1959</option>
-                                <option value="1960">1960</option>
-                                <option value="1961">1961</option>
-                                <option value="1962">1962</option>
-                                <option value="1963">1963</option>
-                                <option value="1964">1964</option>
-                                <option value="1965">1965</option>
-                                <option value="1966">1966</option>
-                                <option value="1967">1967</option>
-                                <option value="1968">1968</option>
-                                <option value="1969">1969</option>
-                                <option value="1970">1970</option>
-                                <option value="1971">1971</option>
-                                <option value="1972">1972</option>
-                                <option value="1973">1973</option>
-                                <option value="1974">1974</option>
-                                <option value="1975">1975</option>
-                                <option value="1976">1976</option>
-                                <option value="1977">1977</option>
-                                <option value="1978">1978</option>
-                                <option value="1979">1979</option>
-                                <option value="1980">1980</option>
-                                <option value="1981">1981</option>
-                                <option value="1982">1982</option>
-                                <option value="1983">1983</option>
-                                <option value="1984">1984</option>
-                                <option value="1985">1985</option>
-                                <option value="1986">1986</option>
-                                <option value="1987">1987</option>
-                                <option value="1988">1988</option>
-                                <option value="1989">1989</option>
-                                <option value="1990">1990</option>
-                                <option value="1991">1991</option>
-                                <option value="1992">1992</option>
-                                <option value="1993">1993</option>
-                                <option value="1994">1994</option>
-                                <option value="1995">1995</option>
-                                <option value="1996">1996</option>
-                                <option value="1997">1997</option>
-                                <option value="1998">1998</option>
-                                <option value="1999">1999</option>
-                                <option value="2000">2000</option>
-                                <option value="2001">2001</option>
-                                <option value="2002">2002</option>
-                                <option value="2003">2003</option>
-                                <option value="2004">2004</option>
-                                <option value="2005">2005</option>
-                                <option value="2006">2006</option>
-                                <option value="2007">2007</option>
-                                <option value="2008">2008</option>
-                                <option value="2009">2009</option>
-                                <option value="2010">2010</option>
-                                <option value="2011">2011</option>
-                                <option value="2012">2012</option>
-                                <option value="2013">2013</option>
-                                <option value="2014">2014</option>
-                                <option value="2015">2015</option>
-                                <option value="2016">2016</option>
-                                <option value="2017">2017</option>
-                                <option value="2018">2018</option>
-                                <option value="2019">2019</option>
-                                <option value="2020">2020</option>
-                                <option value="2021">2021</option>
-                                <option value="2022">2022</option>
-                                <option value="2023">2023</option>
-                                <option value="2024">2024</option>
-                                <option value="2025">2025</option>
-                              </select>
+          <div class="form-group password-container">
+            <label for="password">পাসওয়ার্ড<span>*</span></label>
+            <input type="password" name="password" class="form-control" id="password" placeholder="পাসওয়ার্ড">
+            <span class="togglePassword" data-target="#password">👁</span>
+          </div>
+          <div class="form-group password-container">
+            <label for="confirm_password">কনফার্ম পাসওয়ার্ড<span>*</span></label>
+            <input type="password" name="confirm_password" class="form-control" id="confirm_password" placeholder="কনফার্ম পাসওয়ার্ড">
+            <span class="togglePassword" data-target="#confirm_password">👁</span>
+          </div>
+          <div class="form-group">
+            <input type="submit" name="submit" value="রেজিস্ট্রেশন" class="btn-sty-2">
+          </div>
+          <div class="blood-content-area">
+            <h4>পাসওয়ার্ড ভুলে গেলে যোগাযোগ করুন:</h4>
+            <ul>
+              <li>১.রোগীর ব্যাপারে বিস্তারিত জেনে নিশ্চিত হয়ে রক্ত দিন</li>
+              <li>২.প্রতিবার রক্তদানের পর করে তারিখ পরিবর্তন করে দিন বা যোগাযোগ করুন</li>
+              <li>৩.রোগী দেখে রক্তদান করুন। অবশ্যই রোগীর নিকট উপস্থিত রোগীর আত্মীয়ের সাথে কথা বলে জানিয়ে দিন যে আপনি স্বেচ্ছায় এবং বিনামূল্যে রক্তদান করছেন। যাতে দালাল, আত্মীয় সেজে কিংবা তৃতীয় পক্ষের কেউ দুর্নীতি করতে না পারে।</li>
+              <li>৪.আপনার সংগঠনের নাম দেখতে চাইলে আমাদের সাথে যোগাযোগ করুন</li>
+            </ul>
+          </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="form-group password-container">
-        <label for="password">পাসওয়ার্ড<span>*</span></label>
-        <input type="password" name="password" class="form-control" id="password" placeholder="পাসওয়ার্ড">
-        <span class="togglePassword" data-target="#password">👁</span>
-      </div>
-      <div class="form-group password-container">
-        <label for="confirm_password">কনফার্ম পাসওয়ার্ড<span>*</span></label>
-        <input type="password" name="confirm_password" class="form-control" id="confirm_password" placeholder="কনফার্ম পাসওয়ার্ড">
-        <span class="togglePassword" data-target="#confirm_password">👁</span>
-      </div>
-      <div class="form-group">
-        <input type="submit" name="submit" value="রেজিস্ট্রেশন" class="btn-sty-2">
-      </div>
-      <div class="blood-content-area">
-        <h4>পাসওয়ার্ড ভুলে গেলে যোগাযোগ করুন:</h4>
-        <ul>
-          <li>১.রোগীর ব্যাপারে বিস্তারিত জেনে নিশ্চিত হয়ে রক্ত দিন</li>
-          <li>২.প্রতিবার রক্তদানের পর করে তারিখ পরিবর্তন করে দিন বা যোগাযোগ করুন</li>
-          <li>৩.রোগী দেখে রক্তদান করুন। অবশ্যই রোগীর নিকট উপস্থিত রোগীর আত্মীয়ের সাথে কথা বলে জানিয়ে দিন যে আপনি স্বেচ্ছায় এবং বিনামূল্যে রক্তদান করছেন। যাতে দালাল, আত্মীয় সেজে কিংবা তৃতীয় পক্ষের কেউ দুর্নীতি করতে না পারে।</li>
-          <li>৪.আপনার সংগঠনের নাম দেখতে চাইলে আমাদের সাথে যোগাযোগ করুন</li>
-        </ul>
-      </div>
-        </div>
-      </div>
-    </div>
   </body>
 </html>
